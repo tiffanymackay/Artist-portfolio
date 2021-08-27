@@ -123,6 +123,7 @@ h3 {
 	grid-template-columns: 2fr 1fr;
 	grid-auto-rows: fit-content(40%);
 	column-gap: 75px;
+	text-align: center;
 }
 .content-text {
 	grid-column-start: 1;
