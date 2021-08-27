@@ -4,7 +4,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+*/ 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -96,6 +96,7 @@ img {
 	column-gap: 10px;
 	row-gap: 1em;
 	margin: 0 auto;
+	text-align: center;
 }
 .card img {
 	max-width: 90%;
@@ -127,6 +128,7 @@ h3 {
 	text-align: center;
 }
 .content-text {
+	text-align: left;
 	grid-column-start: 1;
 	grid-column-end: 1;
 	grid-row-start: 1;
