@@ -1,54 +1,4 @@
-@charset "UTF-8";
-/* CSS Document by Tiffany Mackay */
-/*---------CSS Reset---------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/ 
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 /*---------Global Styles---------*/
 
 body {
@@ -72,7 +22,8 @@ nav ul {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0 auto;
-	padding-bottom: 30px;
+	padding: 0px 0px 30px 0px;
+	list-style-type: none;
 }
 li a {
 	color: #545454;
@@ -86,17 +37,6 @@ a:hover {
 img {
 	border-radius: 10px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.photo-grid {
-	max-width: 900px;
-	text-align: center;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: minmax(100px, auto);
-	column-gap: 10px;
-	row-gap: 1em;
-	margin: 0 auto;
-	text-align: center;
 }
 .cards img {
 	max-width: 90%;
@@ -114,38 +54,6 @@ h3 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-.content-grid img {
-	max-width: 250px;
-}
-.content-grid {
-	max-width: 900px;
-	padding-top: 50px;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-auto-rows: fit-content(40%);
-	column-gap: 75px;
-	text-align: center;
-}
-.content-text {
-	text-align: left;
-	grid-column-start: 1;
-	grid-column-end: 1;
-	grid-row-start: 1;
-	grid-row-end: 4;
-}
-.image-profile {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 1;
-}
-.image-work {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 2;
-}
 
 /*---------Footer Styles---------*/
 footer {
@@ -158,8 +66,7 @@ small {
 
 
 @media (max-width: 830px) {
-    
-.logo-img {
-	max-width: 80%;
-}
+	.logo-img {
+		max-width: 80%;
+	}
 }
