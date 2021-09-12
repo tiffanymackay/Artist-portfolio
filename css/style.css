@@ -52,7 +52,7 @@ table {
 /*---------Global Styles---------*/
 
 body {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif !important;
 	color: #545454;
 }
 p {
@@ -98,7 +98,7 @@ img {
 	margin: 0 auto;
 	text-align: center;
 }
-.card img {
+.cards img {
 	max-width: 90%;
 	object-fit: fill;
 }
@@ -154,4 +154,12 @@ footer {
 }
 small {
 	font-size: .9rem;
+}
+
+
+@media (max-width: 830px) {
+    
+.logo-img {
+	max-width: 80%;
+}
 }
