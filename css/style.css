@@ -41,6 +41,9 @@ img {
 .cards img {
 	object-fit: fill;
 }
+.row {
+	justify-content: center !important;
+}
 
 /*---------About Styles---------*/
 h2 {
