@@ -12,13 +12,17 @@ p {
 
 /*---------Header Styles---------*/
 .logo-img{
-	max-width: 50%;
+	width: 600px;
 	display: block;
     margin: 0 auto;
 	padding-bottom: 20px;
 }
+nav {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 nav ul {
-	width: 400px;
+	max-width: 500px;
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0 auto;
@@ -28,6 +32,8 @@ nav ul {
 li a {
 	color: #545454;
 	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 a:hover {
 	color:lightslategray;
@@ -66,9 +72,14 @@ small {
 	font-size: .9rem;
 }
 
-
+/*---------Responsive Styles---------*/
 @media (max-width: 830px) {
 	.logo-img {
-		max-width: 80%;
+		max-width: 100%;
+	}
+}
+@media (max-width: 400px) {
+	.logo-img {
+		max-width: 100% !important;
 	}
 }
